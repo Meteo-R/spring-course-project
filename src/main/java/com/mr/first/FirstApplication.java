@@ -9,7 +9,8 @@ public class FirstApplication {
     public static void main(String[] args) {
         SpringApplication.run(FirstApplication.class, args);
 
-        System.out.println("Hello World!");
+        Coach theCoach = new TrackCoach();
+        System.out.println(theCoach.getDailyWorkout());
     }
 
 }
