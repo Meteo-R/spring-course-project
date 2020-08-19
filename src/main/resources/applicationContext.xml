@@ -9,7 +9,7 @@
 
     <context:property-placeholder location="classpath:sport.properties"/>
 
-    <bean id="myFortuneService" class="com.mr.first.HappyFortuneService"/>
+    <bean id="myFortuneService" class="com.mr.first.RandomFortuneService"/>
 
     <bean id="myCoach" class="com.mr.first.TrackCoach">
         <constructor-arg ref="myFortuneService"/>
