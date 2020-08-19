@@ -4,10 +4,14 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="myFortune" class="com.mr.first.HappyFortuneService"/>
+    <bean id="myFortuneService" class="com.mr.first.HappyFortuneService"/>
 
     <bean id="myCoach" class="com.mr.first.TrackCoach">
-        <constructor-arg ref="myFortune"/>
+        <constructor-arg ref="myFortuneService"/>
+    </bean>
+
+    <bean id="myCricketCoach" class="com.mr.first.CricketCoach">
+        <property name="fortuneService" ref="myFortuneService"/>
     </bean>
 
 </beans>
