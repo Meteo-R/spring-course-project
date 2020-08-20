@@ -2,11 +2,12 @@ package com.mr.springdemoannotations;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 @Component
-@Scope("prototype")
 public class TennisCoach implements Coach {
 
 //    @Autowired
@@ -20,6 +21,16 @@ public class TennisCoach implements Coach {
     public TennisCoach(@Qualifier("randomFortuneService") FortuneService fortuneService) {
         System.out.println(">> TennisCoach: inside default constructor");
         this.fortuneService = fortuneService;
+    }
+
+    @PostConstruct
+    private void doMyStartupStuff() {
+        System.out.println(">> TennisCoach: inside of doMyStartupStuff method");
+    }
+
+    @PreDestroy
+    private void doMyCleanupStuff() {
+        System.out.println(">> TennisCoach: inside of doMyCleanupStuff method");
     }
 
     @Override
