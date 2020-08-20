@@ -10,6 +10,7 @@ public class AnnotationDemoApp {
 
         System.out.println();
         System.out.println(coach.getDailyWorkout());
+        System.out.println(coach.getDailyFortune());
         System.out.println();
 
         context.close();
