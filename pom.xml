@@ -14,6 +14,7 @@
         <module>spring-demo-annotations</module>
         <module>jackson-databind-json-demo</module>
         <module>spring-rest-demo</module>
+        <module>mycoolapp</module>
     </modules>
 
 </project>
