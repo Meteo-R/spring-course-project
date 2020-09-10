@@ -1,4 +1,4 @@
-package com.mr.springboot.demo.mycoolapp.rest;
+package com.mr.springboot.demo.devtoolsdemo.rest;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

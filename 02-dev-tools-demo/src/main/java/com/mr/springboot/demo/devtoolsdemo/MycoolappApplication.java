@@ -1,4 +1,4 @@
-package com.mr.springboot.demo.mycoolapp;
+package com.mr.springboot.demo.devtoolsdemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MycoolappApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MycoolappApplication.class, args);
+		SpringApplication.run(com.mr.springboot.demo.devtoolsdemo.MycoolappApplication.class, args);
 	}
 
 }
