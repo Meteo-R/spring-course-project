@@ -36,6 +36,11 @@
 			</exclusions>
 		</dependency>
 
+        <!--For this to work in IntelliJ, one has to do 2 things:
+            1. Enable "Build project automatically" from Settings->Build, Execution, Deployment->Compiler
+            2. Go to Registry(double Shift, type "Registry") and enable compiler.automake.allow.when.app.running and ide.windowSystem.autoShowProcessPopup
+            reference: https://stackoverflow.com/questions/45639904/intelijj-idea-springboot-devtools
+        -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
