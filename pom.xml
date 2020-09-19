@@ -21,6 +21,7 @@
         <module>21-springboot-hibernate-crud-demo</module>
         <module>22-springboot-jpa-crud-demo</module>
         <module>23-spring-data-jpa-crud-demo</module>
+        <module>24-spring-data-rest-crud-demo</module>
     </modules>
 
 </project>
